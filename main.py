@@ -26,6 +26,8 @@ def help(update, context):
 
 /lv -> linkvertise link bypass
 
+/mdb -> bypass mdisklinks url
+
 /sd -> appDrive or driveApp links
 
 /ex -> use this command for these services
@@ -44,6 +46,7 @@ social-unlock.com
 boost.ink
 goo.gl
 shrto.ml
+mdisk.com
 t.co
 tinyurl.com.
 
@@ -130,5 +133,6 @@ disp.add_handler(telegram.ext.CommandHandler("gp", gp))
 disp.add_handler(telegram.ext.CommandHandler("ex", ex))
 disp.add_handler(telegram.ext.CommandHandler("gdt", gdt))
 disp.add_handler(telegram.ext.CommandHandler("rlb", rlb))
+disp.add_handler(telegram.ext.CommandHandler("mdb", mdb))
 updater.start_polling()
 updater.idle()
